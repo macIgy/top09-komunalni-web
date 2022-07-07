@@ -1,0 +1,77 @@
+<!-- MAIN IMAGE -->
+<div class="w-screen image-swiper relative overflow-hidden">
+    <div class="m-auto h-100 mt-0 mb-5 image-swiper--inner xl:mt-5 xl:rounded-xl">
+        <swiper [config]="config" class="w-full h-full">
+            <ng-template swiperSlide>
+                <div class="w-full h-full slide overflow-hidden"
+                    style="background-image: url('/assets/images/slider/slider1.png');">
+                    <div class="slogan">
+                        <span>SLOGAN PRO</span>
+                        <span>KOMUNÁLNÍ VOLBY</span>
+                        <span>KOMUNÁLNÍ VOLBY</span>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div class="w-full h-full slide slide-2 bg-top"
+                    style="background-image: url('/assets/images/slider/milos2.JPG');">
+                    <div class="slogan">
+                        <span>AHOJ!</span>
+                        <span>JAK SE DAŘÍ?</span>
+                    </div>
+                </div>
+            </ng-template>
+        </swiper>
+    </div>
+</div>
+<!-- CONTINUE MORE -->
+<div class="w-full h-3/12">
+    <div class="gradient-continue text-center p-0 font-bold text-pink bg-white">Pokračujte dolů</div>
+</div>
+<!-- PROGRAM -->
+<div class="max-w-7xl h-auto m-auto">
+    <h1 class="text-center mt-36 znak">JAK ZLEPŠÍME ÚVALY</h1>
+    <div class="w-full flex flex-col gap-10 mt-10 xl:gap-28">
+        <!-- ONE PROGRAM -->
+        <app-program header="Výstavba a rozvoj města " text="Úvaly se zejména v posledních letech dařilo po vizuální stránce významně rozvíjet. Rádi bychom v tomto trendu
+        pokračovali, a navíc se vydali směrem udržitelného provozu města. <b> Podporujeme zavedení participativního
+            rozpočtu</b>, rozvoj koupaliště a nutné opravy ulic. <br><br> Lze očekávat, že již tento podzim nastanou
+        v České republice problémy se zásobováním plynem. <b> Je proto nutné, aby si vedení města nechalo zpracovat
+        studii, jak v Úvalech řešit nedostatek plynu. </b> Budeme podporovat využívání solárních panelů jako jednu z
+        cest, jak vytvořit energeticky soběstačnější město. Úvaláky padnout nenecháme. "
+            image="https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1379&q=80">
+        </app-program>
+        <!-- ONE PROGRAM -->
+        <app-program header="Životní prostředí a ochrana přírody" text="Úvaly se zejména v posledních letech dařilo po vizuální stránce významně rozvíjet. Rádi bychom v tomto trendu
+      pokračovali, a navíc se vydali směrem udržitelného provozu města.<b>Podporujeme zavedení participativního
+      rozpočtu, rozvoj koupaliště a nutné opravy ulic. </b><br><br> Lze očekávat, že již tento podzim nastanou v České
+      republice problémy se zásobováním plynem. Je proto nutné, aby si vedení města nechalo zpracovat studii, jak v
+      Úvalech řešit nedostatek plynu. <b>Budeme podporovat využívání solárních panelů jako jednu z cest, jak vytvořit
+      energeticky soběstačnější město.</b> Úvaláky padnout nenecháme. " [reversed]="true"
+            image="https://images.unsplash.com/photo-1538935732373-f7a495fea3f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2759&q=80">
+        </app-program>
+    </div>
+    <div class="mt-16">
+        <a [routerLink]="['/program']"
+            class="block w-fit m-auto px-5 py-4 text-white font-bold bg-darkblue cursor-pointer hover:bg-pink"> CELÝ
+            PROGRAM</a>
+    </div>
+</div>
+<div class="max-w-7xl h-auto m-auto mt-40">
+    <div class="bg-white py-6 px-4 md:px-12 w-full h-fit">
+        <h1 class="text-center znak">O TOP 09</h1>
+        <div class="flex flex-col md:flex-row mt-5">
+            <p class="md:text-justify self-center w-full md:w-6/12 text-md leading-loose"> TOP 09 <b>je
+                    liberálně-konzervativní politickou stranou</b>, jejíž ideový program vychází z evropských tradic
+                křesťansko-judaistické kultury. Politiku chápeme jako službu svobodnému jedinci, sebevědomému občanovi
+                demokratického státu. Konkurence politických stran pro nás není pouhým usilováním o moc, nýbrž co
+                nejefektivnější metodou správy státu směřující k maximálnímu společenskému prospěchu. Významnou
+                charakteristikou TOP 09 je její proevropský přístup.<b> Jedním z úkolů, které si strana klade, je udržet
+                    stabilitu veřejných rozpočtů a nezvyšovat dluhy.</b> </p>
+            <div class="bg-white shadow-xl mt-4 p-4 h-100 xl:p-16 md:m-12 w-full hidden md:block md:w-6/12">
+                <img class="object-cover h-full " src="https://www.top09.cz/files/photos/large/20170530102344.jpg"
+                    alt="Karel Schwarzenberg">
+            </div>
+        </div>
+    </div>
+</div>

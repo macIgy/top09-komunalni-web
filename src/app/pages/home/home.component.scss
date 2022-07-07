@@ -1,0 +1,122 @@
+
+
+
+.image-swiper::before{
+    content: '';
+    background: linear-gradient(40deg, rgba(255, 255, 255, 0.87) 0%, rgba(243, 243, 243, 0.712) 90%);   
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+}
+
+.image-swiper{
+    height: 500px;
+    max-height: 80vh;
+    background-image: url(https://www.top09.cz/styles/assets/svg/bg-pattern-block.svg);
+    background-position: center top;
+    background-size: 90px 164px;
+
+
+    .slogan{
+        bottom: 1%;
+        left: 1%;
+        position: absolute;
+        margin: 10px;        
+        z-index: 9999;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        
+        span{
+            font-size: 1.4rem;
+            padding: 10px;
+            line-height: 1.6rem;
+            display: inline-block;
+            width: fit-content;
+            font-weight: 800;
+            background-color: white;
+        }
+
+        span:first-child{
+            color:#ff0053;
+        }
+    }
+
+
+    .image-swiper--inner{
+        height: 95%;
+        position: relative;
+        overflow: hidden;
+        max-width: 1600px;
+        overflow: hidden;
+     }
+
+     .slide::before{
+        background: linear-gradient(37deg, rgba(0, 11, 105, 0.671) 0%, rgba(24, 51, 170, 0.144) 60%, rgba(102, 44, 178, 0) 75%, rgba(255, 0, 85, 0.329) 90%);   
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        content: '';
+     }
+
+     .slide{
+        background-size: cover;
+        background-position: 40% center;
+        background-repeat: no-repeat;
+     }
+
+     .slide-2{
+        background-size: cover;
+        background-position: right 28% !important;
+     }
+
+     .slide-2::before{
+        background: linear-gradient(30deg, rgba(255, 0, 85, 0.329)  0%, rgba(24, 51, 170, 0.144) 60%, rgba(102, 44, 178, 0) 65%, rgba(0, 11, 105, 0.671) 90%);   
+
+     }
+
+}
+
+
+
+@media only screen and (min-width: 550px){
+    .image-swiper{
+        .slogan{
+            bottom: 5%;
+            left: 2%;
+
+            span{
+                font-size: 2rem;
+                padding: 20px;
+                line-height: 1.2rem;
+                }
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 900px){
+    .image-swiper{
+        height: calc(100vh - 180px);
+        max-height: calc(100vw - 200px);
+
+        .slogan{
+            bottom: 3%;
+            left: 2%;
+            margin: 50px;    
+
+            span{
+                font-size: 3.8rem;
+                padding: 20px;
+                line-height: 2.6rem;
+                width: fit-content;
+                }
+        }
+    }
+}
+

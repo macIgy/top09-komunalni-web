@@ -1,0 +1,26 @@
+<!-- HEAD -->
+<div class="w-screen shadow-xl colorbar">
+    <div class="width-center-max m-auto flex flex-row justify-between h-fit md:h-40 w-full p-5">
+        <div class="w-3/12 flex flex-row md:m-0">
+            <img src="https://www.top09.cz/styles/assets/svg/logo-u.svg" [routerLink]="['/home']"
+                class="cursor-pointer self-center mt-6 h-full max-h-16 " alt="TOP 09 LOGO">
+            <div
+                class="w-6/12 text-darkblue justify-center self-center px-3 text-2xl font-bold text-center md:text-left md:text-3xl">
+                ÚVALY</div>
+        </div>
+        <div class="self-center align-middle h-fit main-menu hidden md:flex">
+            <ul class="w-fit flex flex-row gap-5 font-bold">
+                <li><a class=" py-1" routerLinkActive="active" [routerLink]="['/home']">ÚVOD</a></li>
+                <li><a class=" py-1" routerLinkActive="active" [routerLink]="['/program']">PROGRAM</a></li>
+                <li><a class=" py-1" routerLinkActive="active" [routerLink]="['/news']">AKTUALITY</a></li>
+                <li><a class=" py-1" routerLinkActive="active" [routerLink]="['/people']">ČLENOVÉ</a></li>
+                <!-- <li><a class=" py-1" routerLinkActive="active" [routerLink]="['/support-us']">PODPOŘTE NÁS</a></li> -->
+                <li><a class="shadow-md py-1" href="https://www.zlepsiuvaly.cz" class="button-menu"
+                        target="_blank">ZLEPŠI ÚVALY</a>
+                </li>
+            </ul>
+        </div>
+        <!-- MOBILE ICON -->
+        <div class="absolute right-3 top-7 md:hidden text-xl"></div>
+    </div>
+</div>

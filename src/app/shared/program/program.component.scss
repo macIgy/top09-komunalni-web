@@ -1,0 +1,29 @@
+.program--overcover-1::after, .program--overcover-2::after{
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    content: '';
+}
+
+.program--overcover-1::after{
+    background: linear-gradient(20deg,  rgba(255,0,83,0.2) 0%, rgba(43,60,214,0.4) 78%);   
+}
+
+.program--overcover-2::after{
+    background: linear-gradient(37deg, rgba(43,60,214,0.4) 0%, rgba(255,0,83,0.2) 78%);   
+  
+}
+
+.program--text{
+    h2{
+        // font-size: 3.1rem;
+        font-weight: 800;
+        line-height: 1.2;
+        color: #141947;
+        letter-spacing: 2px;
+        margin-bottom: 2rem;
+    }
+}
+
