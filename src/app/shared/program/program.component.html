@@ -1,7 +1,7 @@
 <div class="w-full min-h-30 md:mt-24 flex flex-col md:flex-row md:gap-20 relative"
     [ngClass]="{'md:flex-row-reverse': reversed}">
-    <div class=" md:w-8/12 border-10 program--overcover-1 relative md:max-h-100 md:h-100 overflow-hidden ">
-        <img src={{image}} class="w-100 md:h-full object-cover" alt="">
+    <div class="program-image md:w-8/12 border-10 program--overcover-1 relative max-h-100 md:h-100 overflow-hidden "
+        style="background-image: url({{image}})">
     </div>
     <div class="w-full program--text h-fit font-md p-4">
         <h2 class="text-3xl md:text-5xl">{{header}}</h2>

@@ -10,15 +10,19 @@ export class AktualityComponent implements OnInit {
 
   constructor(private dynamicScriptLoader: DynamicScriptLoaderService) { }
 
+  private loaded = false;
+
   ngOnInit(): void {
     window.scrollTo(0, 0);
     this.loadScripts();
   }
 
   private loadScripts() {
+    if (this.loaded)
+      return;
     // You can load multiple scripts by just providing the key as argument into load method of the service
     this.dynamicScriptLoader.load('twitterWidget').then(data => {
-      // Script Loaded Successfully
+      this.loaded = true;
     }).catch(error => console.log(error));
   }
 

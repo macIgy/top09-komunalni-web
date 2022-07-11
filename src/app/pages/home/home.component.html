@@ -1,14 +1,13 @@
 <!-- MAIN IMAGE -->
 <div class="w-screen image-swiper relative overflow-hidden">
-    <div class="m-auto h-100 mt-0 mb-5 image-swiper--inner xl:mt-5 xl:rounded-xl">
+    <div class="m-auto h-100 mt-0 mb-5 max-w-xl image-swiper--inner xl:mt-5 xl:rounded-xl">
         <swiper [config]="config" class="w-full h-full">
             <ng-template swiperSlide>
                 <div class="w-full h-full slide overflow-hidden"
                     style="background-image: url('/assets/images/slider/slider1.png');">
                     <div class="slogan">
-                        <span>SLOGAN PRO</span>
-                        <span>KOMUNÁLNÍ VOLBY</span>
-                        <span>KOMUNÁLNÍ VOLBY</span>
+                        <span>ZLEPŠÍME ÚVALY</span>
+                        <span>SPOLEČNĚ!</span>
                     </div>
                 </div>
             </ng-template>
@@ -16,8 +15,8 @@
                 <div class="w-full h-full slide slide-2 bg-top"
                     style="background-image: url('/assets/images/slider/milos2.JPG');">
                     <div class="slogan">
-                        <span>AHOJ!</span>
-                        <span>JAK SE DAŘÍ?</span>
+                        <span>MĚSTO</span>
+                        <span>PARTNEREM</span>
                     </div>
                 </div>
             </ng-template>
@@ -33,21 +32,17 @@
     <h1 class="text-center mt-36 znak">JAK ZLEPŠÍME ÚVALY</h1>
     <div class="w-full flex flex-col gap-10 mt-10 xl:gap-28">
         <!-- ONE PROGRAM -->
-        <app-program header="Výstavba a rozvoj města " text="Úvaly se zejména v posledních letech dařilo po vizuální stránce významně rozvíjet. Rádi bychom v tomto trendu
-        pokračovali, a navíc se vydali směrem udržitelného provozu města. <b> Podporujeme zavedení participativního
-            rozpočtu</b>, rozvoj koupaliště a nutné opravy ulic. <br><br> Lze očekávat, že již tento podzim nastanou
-        v České republice problémy se zásobováním plynem. <b> Je proto nutné, aby si vedení města nechalo zpracovat
-        studii, jak v Úvalech řešit nedostatek plynu. </b> Budeme podporovat využívání solárních panelů jako jednu z
-        cest, jak vytvořit energeticky soběstačnější město. Úvaláky padnout nenecháme. "
+        <app-program header="Výstavba a rozvoj města " text="
+        Úvaly se zejména v posledních letech dařilo po vizuální stránce významně rozvíjet. V tomto trendu budeme pokračovat, a navíc se vydáme směrem udržitelného provozu města. <b>Podporujeme zavedení participativního rozpočtu, rozvoj koupaliště a nutné opravy ulic.</b>
+        <br><br>Lze očekávat, že již tento podzim nastanou v České republice problémy se zásobováním plynem. Je proto nutné, aby si vedení města nechalo <b>zpracovat studii, jak v Úvalech řešit nedostatek plynu.</b> Budeme podporovat využívání solárních panelů jako jednu z cest, jak <b>vytvořit energeticky soběstačnější město</b>. Úvaláky padnout nenecháme.
+         "
             image="https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1379&q=80">
         </app-program>
         <!-- ONE PROGRAM -->
-        <app-program header="Životní prostředí a ochrana přírody" text="Úvaly se zejména v posledních letech dařilo po vizuální stránce významně rozvíjet. Rádi bychom v tomto trendu
-      pokračovali, a navíc se vydali směrem udržitelného provozu města.<b>Podporujeme zavedení participativního
-      rozpočtu, rozvoj koupaliště a nutné opravy ulic. </b><br><br> Lze očekávat, že již tento podzim nastanou v České
-      republice problémy se zásobováním plynem. Je proto nutné, aby si vedení města nechalo zpracovat studii, jak v
-      Úvalech řešit nedostatek plynu. <b>Budeme podporovat využívání solárních panelů jako jednu z cest, jak vytvořit
-      energeticky soběstačnější město.</b> Úvaláky padnout nenecháme. " [reversed]="true"
+        <app-program header="Životní prostředí a ochrana přírody" text="<b>Udržení a zachování přírody a dobrého životního prostředí ve městě je pro nás klíčové.</b> Koneckonců díky nám zastupitelstvo města dalo stopku nebezpečným glyfosátům.
+            <br><br>Nejsme si jistí, že aktuální flóra je ta nejvhodnější, která může být vysázena. <b>Preferujeme výsadbu stromů</b>, a to proto, že v horkých letních dnech dokáží ochladit prostranství až o několik stupňů Celsia a významně zadržují vodu.
+            <br><br>Jednou z cest, jak být šetrný k okolnímu prostředí, je <b>inteligentní městské osvětlení</b> (IMO). Současné množství a typ lamp způsobuje světelný smog. IMO <b>výrazně sníží i spotřebu elektrické energie</b>, neboť světlo je ztlumené a do 100 % se rozsvítí až tehdy, když zaznamená pohyb člověka.
+        " [reversed]="true"
             image="https://images.unsplash.com/photo-1538935732373-f7a495fea3f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2759&q=80">
         </app-program>
     </div>

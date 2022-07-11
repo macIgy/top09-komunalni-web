@@ -37,6 +37,7 @@
             width: fit-content;
             font-weight: 800;
             background-color: white;
+            color:#141947;
         }
 
         span:first-child{
@@ -49,7 +50,7 @@
         height: 95%;
         position: relative;
         overflow: hidden;
-        max-width: 1600px;
+        max-width: 1300px;
         overflow: hidden;
      }
 
@@ -102,8 +103,8 @@
 
 @media only screen and (min-width: 900px){
     .image-swiper{
-        height: calc(100vh - 180px);
-        max-height: calc(100vw - 200px);
+        height: calc(100vh - 200px);
+        max-height: calc(100vw - 220px);
 
         .slogan{
             bottom: 3%;
