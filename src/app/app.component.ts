@@ -8,6 +8,4 @@ import { SwiperOptions, Zoom } from 'swiper';
 })
 export class AppComponent {
   title = 'TOP 09 ÚVALY';
-
-
 }
