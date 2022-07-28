@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PeopleComponent } from './people.component';
 import { RouterModule } from '@angular/router';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -10,6 +11,7 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
+    SharedModule,
     RouterModule.forChild([{ path: '', component: PeopleComponent }]),
   ]
 })
