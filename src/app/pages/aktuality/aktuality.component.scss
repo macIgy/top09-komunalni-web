@@ -5,3 +5,19 @@
 .facebook{
     max-height: 3000px;
 }
+
+.cover::after {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    content: "";
+    background: linear-gradient(20deg, rgba(255, 0, 83, 0.2) 0%, rgba(43, 60, 214, 0.4) 78%);
+}
+
+P a, p a:link, p a:hover, p a:active, p a:visited{
+    color: #ff0053;
+    font-weight: 600;
+    text-decoration: underline;
+}
